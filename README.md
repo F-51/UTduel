@@ -1,6 +1,6 @@
 # UTDuel
 
-A 1 on 1 duel game type for **Unreal Tournament 2004** (OldUnreal patch 3374).
+A 1 on 1 duel game type for **Unreal Tournament 2004**.
 
 [Русская версия](README.ru.md) · [Changelog](CHANGELOG.md) · [Download the latest release](../../releases/latest)
 
