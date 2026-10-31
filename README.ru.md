@@ -2,6 +2,8 @@
 
 Режим дуэли 1 на 1 для **Unreal Tournament 2004**.
 
+![Панели счёта UTDuel](images/panels.png)
+
 [English version](README.md) · [История изменений](CHANGELOG.md) · [Скачать последний релиз](https://github.com/F-51/UTduel/releases/latest)
 
 ## Что это

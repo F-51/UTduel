@@ -2,6 +2,8 @@
 
 A 1 on 1 duel game type for **Unreal Tournament 2004**.
 
+![UTDuel score panels](images/panels.png)
+
 [Русская версия](README.ru.md) · [Changelog](CHANGELOG.md) · [Download the latest release](https://github.com/F-51/UTduel/releases/latest)
 
 ## What it is
