@@ -17,7 +17,7 @@ Also:
 - **Duel queue.** Spectators queue for the duel. A player who joins a full server becomes a spectator in the queue instead of seeing "server is full". The loser of a match goes to the end of the queue.
 - **Next match without reloading.** After the score screen the next match starts on the same map, with an announcer countdown.
 - **Pauses.** A player can pause the match (the Pause key, `DuelPause` or `!pause` in the chat); an admin can pause at any time.
-- **Connection loss.** If a duelist's game drops during the match, the match is paused and his slot is kept. He comes back with his score, health, shield, weapons and ammo, his place, adrenaline, Double Damage and combo. If he is not back in time, he forfeits.
+- **Connection loss.** If a duelist's game drops during the match, the match is paused and his slot is kept. He comes back with his score, health, shield, weapons with ammo and his place. If he is not back in time, he forfeits.
 - **Spectator tools.** The panel is lit behind the watched player, a new spectator starts on a duelist in first person, the HUD takes the colour of the watched side.
 - **UTComp friendly.** UTComp coloured nicks and model colours on the panel, its crosshair settings, its warm-up and votes are respected.
 - **Fair play.** The health and shield of the players are sent to spectators only. Players never receive them.
