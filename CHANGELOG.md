@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.2.1 (2026-11-01)
+
+- The package is now UTDuel_v121: update ServerPackages and the game type; the HUD settings moved to [UTDuel_v121.HudDuel], the server settings to [UTDuel_v121.DuelGame]
+- The game type is listed as just "Duel" (no version in the name, so stats sites keep it as one mode)
+- A player who closes the game in a pause (Disconnect, the menu) keeps his slot like after a connection loss, no forfeit
+- A dropped player gets back his health, shield, weapons and ammo more reliably, and his speed too; he is put in his old place during the countdown; his body is removed; leaving no longer costs a point or a death
+- Both players left in the same pause: both keep their slots, one countdown for both ("Both players are back"); whoever comes back first is put in his old place at once
+- Whoever leaves in a pause gets the full connection-loss time; if nobody comes back the match ends with no winner and the queue plays next
+- One who was dead when the pause began comes back as after a death
+- Pause sounds: a connection loss and a player's pause each have their own; a player's pause cannot be ended in its first 3 seconds
+- Pause System: a switch for all the pauses (rules, WebAdmin, admin window); off - no player pauses and no pause on connection loss
+- Offline (with bots) the Pause key is the plain pause: no limits, no countdown
+- The queue part of the ESC menu is updated at once, in a pause too
+- Score screen: a message when a player leaves the server or goes to spectate
+- Duel HUD window: "Hide Spectators' Chat on Screen" and "Hide Players' Chat on Screen" (your own lines stay; the hidden ones are still in the chat window F2 and the console)
+- By default the player's top panel has no portraits, the spectator's has them
+
 ## v1.2 (2026-10-31)
 
 - The package is now UTDuel_v12: update ServerPackages and the game type; the HUD settings moved to [UTDuel_v12.HudDuel]

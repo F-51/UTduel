@@ -20,6 +20,7 @@ Also:
 - **Connection loss.** If a duelist's game drops during the match, the match is paused and his slot is kept. He comes back with his score, health, shield, weapons with ammo and his place. If he is not back in time, he forfeits.
 - **Spectator tools.** The panel is lit behind the watched player, a new spectator starts on a duelist in first person, the HUD takes the colour of the watched side.
 - **UTComp friendly.** UTComp coloured nicks and model colours on the panel, its crosshair settings, its warm-up and votes are respected.
+- **A quiet screen.** The chat of spectators and players can be hidden from the screen (ESC → Duel HUD); it stays in the chat window (F2) and the console.
 - **Fair play.** The health and shield of the players are sent to spectators only. Players never receive them.
 
 ## Installation
@@ -27,24 +28,24 @@ Also:
 Copy into the `System` folder of the server (and of the players, if they like):
 
 ```
-UTDuel_v12.u   UTDuel_v12.int   UTDuel_v12.ucl
+UTDuel_v121.u   UTDuel_v121.int   UTDuel_v121.ucl
 ```
 
 In the server's `UT2004.ini`, section `[Engine.GameEngine]`:
 
 ```
-ServerPackages=UTDuel_v12
+ServerPackages=UTDuel_v121
 ```
 
-Remove the line of an older version (for example `ServerPackages=UTDuel_v11`).
+Remove the line of an older version (for example `ServerPackages=UTDuel_v12`).
 
-Game type: `UTDuel_v12.DuelGame` (listed as "Duel v1.2"). Example:
+Game type: `UTDuel_v121.DuelGame` (listed as "Duel"). Example:
 
 ```
-ucc server DM-Rankin?game=UTDuel_v12.DuelGame
+ucc server DM-Rankin?game=UTDuel_v121.DuelGame
 ```
 
-The `.ucl` file is needed by WebAdmin and the game menus: without it the game type is not listed. At its first start the server writes the settings of the mode to its ini, section `[UTDuel_v12.DuelGame]`.
+The `.ucl` file is needed by WebAdmin and the game menus: without it the game type is not listed. At its first start the server writes the settings of the mode to its ini, section `[UTDuel_v121.DuelGame]`.
 
 ## Server settings
 
@@ -57,6 +58,7 @@ In the game rules (Rules tab), in WebAdmin and in the server's ini. A logged-in 
 | End Match When a Player Leaves | on | a duelist who leaves or goes to spectate during the match loses it at once |
 | Restart Map After Match | on | the next match on the same map without reloading |
 | Queue System | on | the duel queue |
+| Pause System | on | the switch of all the pauses |
 | Pause on Connection Loss | on | the technical pause |
 | Connection Loss Pause Time | 120 | seconds, 10..600 |
 | Player Pause Time (0 = off) | 60 | seconds, 0..600 |
