@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.2.2 (2026-11-02)
+
+- The package is now UTDuel_v122: update ServerPackages and the game type; the HUD settings moved to [UTDuel_v122.HudDuel], the server settings to [UTDuel_v122.DuelGame]
+- Offline: going to spectate or joining from the ESC menu no longer pauses the game
+
 ## v1.2.1 (2026-11-01)
 
 - The package is now UTDuel_v121: update ServerPackages and the game type; the HUD settings moved to [UTDuel_v121.HudDuel], the server settings to [UTDuel_v121.DuelGame]
