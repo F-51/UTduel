@@ -9,7 +9,8 @@
 - Both players left in the same pause: both keep their slots, one countdown for both ("Both players are back"); whoever comes back first is put in his old place at once
 - Whoever leaves in a pause gets the full connection-loss time; if nobody comes back the match ends with no winner and the queue plays next
 - One who was dead when the pause began comes back as after a death
-- Pause sounds: a connection loss and a player's pause each have their own; a player's pause cannot be ended in its first 3 seconds
+- Pause sounds: a connection loss and a player's pause each have their own
+- A player's pause cannot be ended in its first 3 seconds (an accidental double press no longer wastes it)
 - Pause System: a switch for all the pauses (rules, WebAdmin, admin window); off - no player pauses and no pause on connection loss
 - Offline (with bots) the Pause key is the plain pause: no limits, no countdown
 - The queue part of the ESC menu is updated at once, in a pause too
