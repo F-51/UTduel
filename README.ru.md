@@ -28,24 +28,24 @@
 Скопировать в папку `System` сервера (а при желании и игроков):
 
 ```
-UTDuel_v122.u   UTDuel_v122.int   UTDuel_v122.ucl
+UTDuel_v123.u   UTDuel_v123.int   UTDuel_v123.ucl
 ```
 
 В `UT2004.ini` сервера, в секции `[Engine.GameEngine]`:
 
 ```
-ServerPackages=UTDuel_v122
+ServerPackages=UTDuel_v123
 ```
 
-Строку старой версии (например `ServerPackages=UTDuel_v121`) убрать.
+Строку старой версии (например `ServerPackages=UTDuel_v122`) убрать.
 
-Тип игры: `UTDuel_v122.DuelGame` (в списках — «Duel»). Пример:
+Тип игры: `UTDuel_v123.DuelGame` (в списках — «Duel»). Пример:
 
 ```
-ucc server DM-Rankin?game=UTDuel_v122.DuelGame
+ucc server DM-Rankin?game=UTDuel_v123.DuelGame
 ```
 
-Файл `.ucl` нужен вебадминке и меню игры: без него режим не появится в списках. При первом запуске сервер записывает настройки режима в свой ini, секция `[UTDuel_v122.DuelGame]`.
+Файл `.ucl` нужен вебадминке и меню игры: без него режим не появится в списках. При первом запуске сервер записывает настройки режима в свой ini, секция `[UTDuel_v123.DuelGame]`.
 
 ## Настройки сервера
 

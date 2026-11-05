@@ -1,9 +1,15 @@
 # Changelog
 
+## v1.2.3 (2026-11-05)
+
+- The package is now UTDuel_v123: update ServerPackages and the game type; the HUD settings moved to [UTDuel_v123.HudDuel], the server settings to [UTDuel_v123.DuelGame]
+- Grenades with UTComp: UTComp decides them (its NumGrenadesOnSpawn setting, ?GrenadesOnSpawn, its voting); its warm-up keeps its full grenade ammo instead of 1. Without UTComp: 1 grenade, or ?GrenadesOnSpawn=N
+
 ## v1.2.2 (2026-11-02)
 
 - The package is now UTDuel_v122: update ServerPackages and the game type; the HUD settings moved to [UTDuel_v122.HudDuel], the server settings to [UTDuel_v122.DuelGame]
 - Offline: going to spectate or joining from the ESC menu no longer pauses the game
+- Top panel with UTComp coloured nicks on (DuelColoredNames 1): the nicks are drawn with the mod's own copy of the Eurostile font, so they look the same in a localized game; black letters get a shadow in the colour of the player's side and stay readable on the dark plate, with a transparent HUD too
 
 ## v1.2.1 (2026-11-01)
 

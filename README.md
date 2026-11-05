@@ -28,24 +28,24 @@ Also:
 Copy into the `System` folder of the server (and of the players, if they like):
 
 ```
-UTDuel_v122.u   UTDuel_v122.int   UTDuel_v122.ucl
+UTDuel_v123.u   UTDuel_v123.int   UTDuel_v123.ucl
 ```
 
 In the server's `UT2004.ini`, section `[Engine.GameEngine]`:
 
 ```
-ServerPackages=UTDuel_v122
+ServerPackages=UTDuel_v123
 ```
 
-Remove the line of an older version (for example `ServerPackages=UTDuel_v121`).
+Remove the line of an older version (for example `ServerPackages=UTDuel_v122`).
 
-Game type: `UTDuel_v122.DuelGame` (listed as "Duel"). Example:
+Game type: `UTDuel_v123.DuelGame` (listed as "Duel"). Example:
 
 ```
-ucc server DM-Rankin?game=UTDuel_v122.DuelGame
+ucc server DM-Rankin?game=UTDuel_v123.DuelGame
 ```
 
-The `.ucl` file is needed by WebAdmin and the game menus: without it the game type is not listed. At its first start the server writes the settings of the mode to its ini, section `[UTDuel_v122.DuelGame]`.
+The `.ucl` file is needed by WebAdmin and the game menus: without it the game type is not listed. At its first start the server writes the settings of the mode to its ini, section `[UTDuel_v123.DuelGame]`.
 
 ## Server settings
 
