@@ -20,7 +20,7 @@ Also:
 - **Connection loss.** If a duelist's game drops during the match, the match is paused and their slot is kept. They come back with their score, health, shield, weapons with ammo and their place. If they are not back in time, they forfeit.
 - **Spectator tools.** The panel is lit behind the watched player, a new spectator starts on a duelist in first person, the HUD takes the colour of the watched side.
 - **UTComp friendly.** UTComp coloured nicks and model colours on the panel, its crosshair settings, its warm-up and votes are respected.
-- **The challenger picks the map** (a server setting, off by default). Everyone in the queue picks the map of their next duel; the winner who stays has no say.
+- **The challenger picks the map** (a server setting, on by default). Everyone in the queue picks the map of their next duel; the winner who stays has no say.
 - **Your language.** The menus, the HUD and the messages of the server come in the language of each player's own game. English and Russian included; a translation is one text file (see `readme_en.txt`, TRANSLATION).
 - **A quiet screen.** The chat of spectators and players can be hidden from the screen (ESC → Duel HUD); it stays in the chat window (F2) and the console.
 - **Fair play.** The health and shield of the players are sent to spectators only. Players never receive them.
@@ -62,7 +62,7 @@ In the game rules (Rules tab), in WebAdmin and in the server's ini. A logged-in 
 | End Match When a Player Leaves | on | a duelist who leaves or goes to spectate during the match loses it at once |
 | Restart Map After Match | on | the next match on the same map without reloading |
 | Queue System | on | the duel queue |
-| Challenger Picks the Map | off | everyone in the queue picks the map of their next duel (ESC → Pick Map); needs the Queue System and Restart Map After Match |
+| Challenger Picks the Map | on | everyone in the queue picks the map of their next duel (ESC → Pick Map); needs the Queue System and Restart Map After Match |
 | Pause System | on | the switch of all the pauses |
 | Pause on Connection Loss | on | the technical pause |
 | Connection Loss Pause Time | 120 | seconds, 10..600 |
