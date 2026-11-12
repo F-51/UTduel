@@ -10,13 +10,13 @@
 - ESC - Duel Settings (admin): Challenger Picks the Map, Restart Map After Match, End Match When a Player Leaves; server settings are now arranged in two columns
 - ESC: the Players and Queue sections now share the available space equally (both players fit on screen at low resolutions such as 1024x768); added a "<--- you" indicator next to your entry in the queue
 - Spectator: added a new Below (Meters) layout (presets plain-meters, portraits-meters): health and shield are displayed as meters divided into 25-point segments, using stock HUD icons; with portraits, the values are shown next to the meters (DuelMeters)
-- DuelHP without an argument now cycles through the layouts available in the Duel HUD window
-- Nicknames scale with the panel again at 1440p and 4K resolutions
-- Fixed a bug that prevented a spectator who joined at the very start of a match from switching between players' POVs
+- DuelHP without an argument now cycles through the layouts available in the Duel HUD window (old unused presets have been removed)
+- Fixed nickname sizes at 1440p and 4K resolutions
+- Fixed a bug that prevented spectators from switching between players' POVs
 - ESC: button rows are now centred
 - Localisation: menus, HUD text and server messages are now stored in UTDuel_v124.int; each player sees them in their own game language (the server sends the message, and the client displays the localised text). Russian included (UTDuel_v124.rut). Information for translators can be found in the "LOCALISATION" section above
 - The release archive now includes UTDuel_v124.u.uz2 for redirect servers (in the Redirect folder)
-- With UTComp: fixed a bug where, with "Restart Map After Match" enabled, duelists started the warm-up with the match loadout instead of the warm-up weapons (so the warm-up looked like a new match); nobody is marked ready at its start
+- With UTComp: fixed a bug where, with "Restart Map After Match" enabled, duelists spawned without their full warm-up weapon loadout on their first respawn
 
 ## v1.2.3 (2026-11-05)
 
