@@ -14,7 +14,7 @@
 - Fixed nickname sizes at 1440p and 4K resolutions
 - Fixed a bug that prevented spectators from switching between players' POVs
 - ESC: button rows are now centred
-- Localisation: menus, HUD text and server messages are now stored in UTDuel_v124.int; each player sees them in their own game language (the server sends the message, and the client displays the localised text). Russian included (UTDuel_v124.rut). Information for translators can be found in the "LOCALISATION" section above
+- Localisation: menus, HUD text and server messages are now stored in UTDuel_v124.int; each player sees them in their own game language (the server sends the message, and the client displays the localised text). For now only Russian is included (UTDuel_v124.rut); more languages will be added with future updates. Information for translators can be found in the "LOCALISATION" section above
 - The release archive now includes UTDuel_v124.u.uz2 for redirect servers (in the Redirect folder)
 - With UTComp: fixed a bug where, with "Restart Map After Match" enabled, duelists spawned without their full warm-up weapon loadout on their first spawn
 
