@@ -16,7 +16,7 @@
 - ESC: button rows are now centred
 - Localisation: menus, HUD text and server messages are now stored in UTDuel_v124.int; each player sees them in their own game language (the server sends the message, and the client displays the localised text). Russian included (UTDuel_v124.rut). Information for translators can be found in the "LOCALISATION" section above
 - The release archive now includes UTDuel_v124.u.uz2 for redirect servers (in the Redirect folder)
-- With UTComp: fixed a bug where, with "Restart Map After Match" enabled, duelists spawned without their full warm-up weapon loadout on their first respawn
+- With UTComp: fixed a bug where, with "Restart Map After Match" enabled, duelists spawned without their full warm-up weapon loadout on their first spawn
 
 ## v1.2.3 (2026-11-05)
 
