@@ -10,7 +10,7 @@
 - ESC - Duel Settings (admin): Challenger Picks the Map, Restart Map After Match, End Match When a Player Leaves; server settings are now arranged in two columns
 - ESC: the Players and Queue sections now share the available space equally (both players fit on screen at low resolutions such as 1024x768); added a "<--- you" indicator next to your entry in the queue
 - Spectator: added a new Below (Meters) layout (presets plain-meters, portraits-meters): health and shield are displayed as meters divided into 25-point segments, using stock HUD icons; with portraits, the values are shown next to the meters (DuelMeters)
-- DuelHP without an argument now cycles through the layouts available in the Duel HUD window (old unused presets have been removed)
+- DuelHP without an argument now cycles through the layouts available in the Duel HUD window (layouts that are not in the list are no longer part of the cycle)
 - Fixed nickname sizes at 1440p and 4K resolutions
 - Fixed a bug that prevented spectators from switching between players' POVs
 - ESC: button rows are now centred
