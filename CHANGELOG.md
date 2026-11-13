@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.2.5 (2026-11-13)
+
+- The package is now UTDuel_v125: update ServerPackages and the game type; the HUD settings have moved to [UTDuel_v125.HudDuel], and the server settings to [UTDuel_v125.DuelGame]
+- "Challenger Picks the Map" now also works with "Restart Map After Match" off: the challenger's pick takes priority over the map rotation and the end-of-match map vote; "current map" reloads the same map
+- While the challenger has a map to pick, the standard map vote is locked too (also on the score screen), with a message to the players
+- Queue across a map change: the challenger keeps their place in the next duel, the loser goes to the end of the queue
+- A map change in the middle of a match is no longer counted as a forfeit
+- New rules settings: Adrenaline (off by default) and Grenades on Spawn (1 by default; with UTComp, UTComp decides)
+- The "Challenger Picks the Map" checkbox in the Duel Settings menu now depends only on "Queue System"
+- With UTComp: a restart with a picked map now travels to it only once
+
 ## v1.2.4 (2026-11-13)
 
 - The package is now UTDuel_v124: update ServerPackages and the game type; the HUD settings have moved to [UTDuel_v124.HudDuel], and the server settings to [UTDuel_v124.DuelGame]

@@ -30,26 +30,26 @@ Also:
 Copy into the `System` folder of the server (and of the players, if they like):
 
 ```
-UTDuel_v124.u   UTDuel_v124.int   UTDuel_v124.ucl   UTDuel_v124.rut
+UTDuel_v125.u   UTDuel_v125.int   UTDuel_v125.ucl   UTDuel_v125.rut
 ```
 
-For a redirect server the compressed package is in the `Redirect` folder of the archive: `UTDuel_v124.u.uz2`.
+For a redirect server the compressed package is in the `Redirect` folder of the archive: `UTDuel_v125.u.uz2`.
 
 In the server's `UT2004.ini`, section `[Engine.GameEngine]`:
 
 ```
-ServerPackages=UTDuel_v124
+ServerPackages=UTDuel_v125
 ```
 
-Remove the line of an older version (for example `ServerPackages=UTDuel_v123`).
+Remove the line of an older version (for example `ServerPackages=UTDuel_v124`).
 
-Game type: `UTDuel_v124.DuelGame` (listed as "Duel"). Example:
+Game type: `UTDuel_v125.DuelGame` (listed as "Duel"). Example:
 
 ```
-ucc server DM-Rankin?game=UTDuel_v124.DuelGame
+ucc server DM-Rankin?game=UTDuel_v125.DuelGame
 ```
 
-The `.ucl` file is needed by WebAdmin and the game menus: without it the game type is not listed. At its first start the server writes the settings of the mode to its ini, section `[UTDuel_v124.DuelGame]`.
+The `.ucl` file is needed by WebAdmin and the game menus: without it the game type is not listed. At its first start the server writes the settings of the mode to its ini, section `[UTDuel_v125.DuelGame]`.
 
 ## Server settings
 
@@ -58,11 +58,13 @@ In the game rules (Rules tab), in WebAdmin and in the server's ini. A logged-in 
 | Setting | Default | |
 |---|---|---|
 | Double Damage | off | its pickups are removed from the map |
+| Adrenaline | off | adrenaline pills and combos |
+| Grenades on Spawn | 1 | assault rifle grenades after spawning, 0..8; with UTComp running, UTComp decides |
 | List as Deathmatch | on | the server shows up in the Deathmatch list of the server browser |
 | End Match When a Player Leaves | on | a duelist who leaves or goes to spectate during the match loses it at once |
 | Restart Map After Match | on | the next match on the same map without reloading |
 | Queue System | on | the duel queue |
-| Challenger Picks the Map | on | everyone in the queue picks the map of their next duel (ESC → Pick Map); needs the Queue System and Restart Map After Match |
+| Challenger Picks the Map | on | everyone in the queue picks the map of their next duel (ESC → Pick Map); needs the Queue System; with Restart Map After Match off the pick goes before the map rotation and the end-of-match vote |
 | Pause System | on | the switch of all the pauses |
 | Pause on Connection Loss | on | the technical pause |
 | Connection Loss Pause Time | 120 | seconds, 10..600 |

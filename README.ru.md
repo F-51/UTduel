@@ -30,26 +30,26 @@
 Скопировать в папку `System` сервера (а при желании и игроков):
 
 ```
-UTDuel_v124.u   UTDuel_v124.int   UTDuel_v124.ucl   UTDuel_v124.rut
+UTDuel_v125.u   UTDuel_v125.int   UTDuel_v125.ucl   UTDuel_v125.rut
 ```
 
-Для redirect-сервера сжатый пакет лежит в папке `Redirect` архива: `UTDuel_v124.u.uz2`.
+Для redirect-сервера сжатый пакет лежит в папке `Redirect` архива: `UTDuel_v125.u.uz2`.
 
 В `UT2004.ini` сервера, в секции `[Engine.GameEngine]`:
 
 ```
-ServerPackages=UTDuel_v124
+ServerPackages=UTDuel_v125
 ```
 
-Строку старой версии (например `ServerPackages=UTDuel_v123`) убрать.
+Строку старой версии (например `ServerPackages=UTDuel_v124`) убрать.
 
-Тип игры: `UTDuel_v124.DuelGame` (в списках — «Duel»). Пример:
+Тип игры: `UTDuel_v125.DuelGame` (в списках — «Duel»). Пример:
 
 ```
-ucc server DM-Rankin?game=UTDuel_v124.DuelGame
+ucc server DM-Rankin?game=UTDuel_v125.DuelGame
 ```
 
-Файл `.ucl` нужен вебадминке и меню игры: без него режим не появится в списках. При первом запуске сервер записывает настройки режима в свой ini, секция `[UTDuel_v124.DuelGame]`.
+Файл `.ucl` нужен вебадминке и меню игры: без него режим не появится в списках. При первом запуске сервер записывает настройки режима в свой ini, секция `[UTDuel_v125.DuelGame]`.
 
 ## Настройки сервера
 
@@ -58,11 +58,13 @@ ucc server DM-Rankin?game=UTDuel_v124.DuelGame
 | Настройка | По умолчанию | |
 |---|---|---|
 | Double Damage | выкл | его бонусы убираются с карты |
+| Adrenaline | выкл | таблетки адреналина и комбо |
+| Grenades on Spawn | 1 | гранат у штурмовой винтовки после спавна, 0..8; если работает UTComp, решает он |
 | List as Deathmatch | вкл | сервер виден в списке Deathmatch браузера серверов |
 | End Match When a Player Leaves | вкл | дуэлянт, вышедший или ушедший в зрители посреди матча, сразу проигрывает |
 | Restart Map After Match | вкл | следующий матч на той же карте без перезагрузки |
 | Queue System | вкл | очередь на дуэль |
-| Challenger Picks the Map | вкл | каждый в очереди выбирает карту своей следующей дуэли (ESC → Pick Map); нужны Queue System и Restart Map After Match |
+| Challenger Picks the Map | вкл | каждый в очереди выбирает карту своей следующей дуэли (ESC → Pick Map); нужна Queue System; без Restart Map After Match выбор важнее ротации карт и голосования в конце матча |
 | Pause System | вкл | общий выключатель всех пауз |
 | Pause on Connection Loss | вкл | пауза при вылете |
 | Connection Loss Pause Time | 120 | секунд, 10..600 |
